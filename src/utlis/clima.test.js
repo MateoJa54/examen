@@ -1,4 +1,4 @@
-const { toCelsius, toFahrenheit, movingAverage } = require('./conversion');
+const { toCelsius, toFahrenheit, movingAverage } = require('./clima');
 
 describe('toCelsius(f)', () => {
   test('32°F -> 0.0°C', () => {
@@ -45,7 +45,7 @@ describe('movingAverage(series, window)', () => {
     expect(movingAverage([1, 2, 3], 3)).toEqual([2.00]);
   });
 
-  test('TypeError si series tiene valores no numéricos', () => {
+  test('TypeError si series tiene no numéricos', () => {
     expect(() => movingAverage([1, 'x', 3], 2)).toThrow(TypeError);
     expect(() => movingAverage([1, NaN], 2)).toThrow(TypeError);
   });

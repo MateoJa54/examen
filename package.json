@@ -2,11 +2,11 @@
   "name": "examen",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "start": "node index.js",
-    "lint": "eslint"
-  },
+"scripts": {
+  "test": "jest --coverage",
+  "start": "node index.js",
+  "lint": "eslint ."
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
